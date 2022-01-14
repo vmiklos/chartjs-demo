@@ -17,6 +17,7 @@ import {
   Title,
   Tooltip
 } from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 Chart.register(
   LineElement,
@@ -36,6 +37,7 @@ Chart.register(
   Title,
   Tooltip
 );
+Chart.register(ChartDataLabels);
 
 document.addEventListener("DOMContentLoaded", function(event) {
     const daily = [["2021-12-31", 123], ["2022-01-01", 18]];
