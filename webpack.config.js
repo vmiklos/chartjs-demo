@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry : './src/browser/main.ts',
-    resolve : {extensions : [ ".ts" ]},
+    resolve : {extensions : [ ".ts", ".js" ]},
     module : {
         rules : [ {
             use : "ts-loader",
